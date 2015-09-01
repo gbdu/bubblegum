@@ -34,15 +34,17 @@
 
 
 body {
-    font-family: 'ubuntu';
+    font-family: 'ubuntu', "Inconsolata", Monospace;
     color: #EEDFB8;
-     font-size:16pt;
+    font-size:1em;
     background-color: #190C12;
     -webkit-font-smoothing: antialiased;
 }
 
 #pplinker{
-     color: #BAAF90;
+     color: #EEDFB8;
+}
+#ppbase{
 }
 
 #pphead{
@@ -60,19 +62,23 @@ body {
 #ppcontent{
     background-color: #1E0E16;
     padding-top:1px;
-    width:100%;
     padding-bottom:5px;
     font-size:12pt;
-    border-left: 1px solid #724D36;
-    padding-left:5px;
+    border-left: 1px solid #AB745D;
     overflow:initial;
 }
 
+
+#ppcontent:hover{
+    border-left: 1px solid #F5A685;
+}
+
 .readmore{
-    font-size:12px;
+    width:100%;
+    font-size:12pt;
+    border-left: 1px solid #AB745D;
     font-family: "flourer";
     background-color: #370F19;
-    border-left: 1px solid #724D36;
     text-align:right;
 }
 
@@ -96,7 +102,7 @@ a:active, a:focus {
 }
 
 #maintitle  {
-    font-size:1.5em;
+    font-size:2em;
     line-height:1;
     font-weight: bold;
     font-family: 'flour';
@@ -128,13 +134,12 @@ hr:after,
 }
 
 article {
-    border-bottom: 1px solid #CE8C70;
-
-    margin-bottom:1em;
+    border-bottom: 1px solid #AB745D;
+    margin-bottom:0.5em;
 }
 
 article header h1 {
-    font-size: 0.8em;   
+    font-size: 1em;   
 }
 
 article header .meta {
@@ -146,8 +151,7 @@ article header .meta a { text-decoration: none; }
 article:after {
     display: block;
     text-align: center;
-    font-weight: lighter;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 article:last-of-type:after {
@@ -184,13 +188,13 @@ article:last-of-type:after {
 }
 
 .menuentry{
-    font-family: 'flour';
-    font-size: 8px;
+    font-family: "flour";
+    font-size:12pt
 }
 
 .menuentry_s{
-    font-family: 'flour';
-    font-size: 8px;
+    font-family: "flour";
+    font-size:12pt
 }
 
  ul.tree, ul.tree ul {
@@ -219,7 +223,7 @@ ul.tree li.last {
 
 #page-foot {
     font-family: 'flour';
-    font-size:10px;
+    font-size:10pt;
     text-align: center;
     width:600px;
 }
@@ -227,7 +231,7 @@ ul.tree li.last {
 
 #pagination {
     display: block;
-    margin-bottom: 4em;
+    margin-bottom: 1em;
     text-align: center;
 }
 
