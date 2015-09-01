@@ -1,0 +1,221 @@
+/* vim: set ts=4 sw=4 et: */
+
+
+@font-face {
+     font-family: 'Junction';
+     src: url('junk.otf');
+     font-weight: normal;
+     font-style: normal;
+}
+
+*{
+     font-size:14pt;
+     line-height: 1.2;
+
+}
+body {
+    font-family: 'Junction', Monospace, serif;
+    color: #423B3D;
+     font-size:12pt;
+    background-color: #FDFDFD;
+    -webkit-font-smoothing: antialiased;
+}
+
+a, a:visited {
+    color: #314446;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #DABF8F;
+}
+
+a:active, a:focus {
+}
+
+
+h1, h2, h3,
+h4, h5, h6,
+.meta {
+    line-height: 4px;
+}
+
+hr {
+}
+
+hr:after,
+#page-foot:before {
+    visibility: visible;
+    display: block;
+    text-align: center;
+}
+
+article {
+}
+
+article header h1 {
+    line-height:1px;
+}
+
+article header .meta {
+    font-size: 1em;
+}
+
+article header .meta a { text-decoration: none; }
+
+article:after {
+    display: block;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1.5em;
+}
+
+article:last-of-type:after {
+    content: '';
+}
+
+
+#page-head {
+    padding-top: .1em;
+    padding-left: 2em;
+
+    color:#FF4848;
+}
+
+#page-head h1 {
+    font-size: 3em;
+}
+
+#page-head h1 a:hover {
+    text-decoration: none;
+
+}
+
+#page-side {em;
+    line-height: 1em;
+}
+
+
+ ul.tree, ul.tree ul {
+    list-style-type: none;
+}
+
+
+ul.tree ul {
+    margin-left: 0px;
+}
+
+ul.tree li {
+    padding: 0 13px;
+
+    line-height: 20px;
+    background: url(node.png) no-repeat;
+}
+
+
+ul.tree a{
+}
+
+ul.tree a:hover{
+}
+
+li.subcat {
+    color: #E0B38C;
+    margin-left:0px;
+}
+
+ul.tree li.last {
+background: url(lastnode.png) no-repeat;
+} 
+
+#page-foot {
+    font-size: .8em;
+    text-align: center;
+     opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+    width:600px;
+}
+
+
+#pagination {
+    display: block;
+    margin-bottom: 4em;
+    text-align: center;
+}
+
+#tag-cloud li {
+    margin: .2em 1em;
+    transition: transform 200ms linear;
+}
+
+#tag-cloud li a {
+    text-decoration: none;
+}
+
+#tag-cloud li:hover {
+    transform: rotate(0deg) scale(1.3, 1.3)!important;
+}
+
+#tag-cloud li:hover a {
+}
+
+.timed {
+    font-weight: bold;
+    margin-left: 10px;
+    color: #5A4034;
+}
+
+h1.small-title {;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: normal;
+}
+h1 a, h1 a:visited,
+h2 a, h2 a:visited,
+h3 a, h3 a:visited,
+h4 a, h4 a:visited,
+h5 a, h5 a:visited,
+h6 a, h6 a:visited {
+    text-decoration: none;
+}
+
+a.goto {
+    font-size: .8em;
+    padding: 0;
+    margin: 0em .2em;
+}
+
+img, figure, table {
+    margin: 1em auto;
+    overflow-x: auto;
+}
+
+table td, table th {
+    border: 1px solid silver;
+    padding: .15em .3em;
+}
+
+pre {
+    font-family: monospace;
+    border:1px;
+    padding: 0.5em;
+    max-width: 100%;
+}
+
+figure * { border: none; margin: auto; padding: auto; }
+
+@media screen and (max-width: 650px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 14px;
+    }
+
+    #page-head h1 {
+        font-size: 2.5em;
+    }
+}

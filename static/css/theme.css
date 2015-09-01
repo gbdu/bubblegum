@@ -1,0 +1,309 @@
+/* vim: set ts=4 sw=4 et: */
+
+
+@font-face {
+     font-family: 'proggy';
+     src: url('proggy.otf');
+     font-weight: normal;
+     font-style: normal;
+}
+
+
+@font-face {
+     font-family: 'flour';
+     src: url('04B_08__.otf');
+     font-weight: normal;
+     font-style: normal;
+}
+
+@font-face {
+     font-family: 'flourer';
+     src: url('04B_03__.otf');
+     font-weight: normal;
+     font-style: normal;
+}
+
+
+@font-face {
+     font-family: 'ubuntu';
+     src: url('ubuntu.otf');
+     font-weight: normal;
+     font-style: normal;
+}
+
+
+
+body {
+    font-family: 'ubuntu';
+    color: #EEDFB8;
+     font-size:16pt;
+    background-color: #190C12;
+    -webkit-font-smoothing: antialiased;
+}
+
+#pphead{
+    font-family: 'flour';
+    font-size:8px;
+    background-color: #370F19;
+    border-bottom: 1px solid #49382D;
+}
+
+#pphead:hover{
+    background-color: #580016;
+    border-bottom: 1px solid #724D36;
+}
+
+#ppcontent{
+    background-color: #1E0E16;
+    padding-top:1px;
+    padding-bottom:5px;
+    font-size:12pt;
+    border-left: 1px solid #724D36;
+    padding-left:5px;
+    overflow:initial;
+}
+
+.readmore{
+    font-size:12px;
+    font-family: "flourer";
+    background-color: #370F19;
+    border-left: 1px solid #724D36;
+    text-align:right;
+}
+
+.readmore:hover{
+}
+
+a, a:visited {
+    color: #975648;
+    text-decoration: none;
+}
+
+p{
+    padding-left: 15px;
+}
+
+a:hover {
+    color: #FFEBA9;
+}
+
+a:active, a:focus {
+}
+
+#maintitle  {
+    font-size:1.5em;
+    line-height:1;
+    font-weight: bold;
+    font-family: 'flour';
+    margin-left:10px;
+}
+
+#subtitle{
+    font-size:8px;
+    margin-left:25px;
+}
+
+
+h1, h2, h3,
+h4, h5, h6
+{
+    font-family: "flour";
+}
+.meta {
+}
+
+hr {
+}
+
+hr:after,
+#page-foot:before {
+    visibility: visible;
+    display: block;
+    text-align: center;
+}
+
+article {
+    border-bottom: 1px solid #CE8C70;
+
+    margin-bottom:1em;
+}
+
+article header h1 {
+    font-size: 0.8em;   
+}
+
+article header .meta {
+    font-size: 1em;
+}
+
+article header .meta a { text-decoration: none; }
+
+article:after {
+    display: block;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1.5em;
+}
+
+article:last-of-type:after {
+    content: '';
+}
+
+#page-head  {
+    font-size: 2.5em;
+    font-family: 'flour';
+    border-bottom: 1px solid #AB745D;
+    padding-bottom:5px;
+    margin-bottom:10px;
+    width:100%;
+}
+
+#page-head h1 {
+    font-size: 2em;
+}
+
+#page-head h1 a:hover {
+    text-decoration: none;
+
+}
+
+#page-side {
+
+}
+
+.coin{
+    font-size:15pt;
+
+    font-weight: bold;
+    font-family: "flour";
+}
+
+.menuentry{
+    font-family: 'flour';
+    font-size: 8px;
+}
+
+.menuentry_s{
+    font-family: 'flour';
+    font-size: 8px;
+}
+
+ ul.tree, ul.tree ul {
+    list-style-type: none;
+    padding-left:12px;
+    margin-top:2px;
+}
+
+ul.tree ul {
+}
+
+ul.tree li {
+    padding: 0 13px;
+    line-height: 15px;
+    background: url(node.png) no-repeat;
+}
+
+
+li.subcat {
+    margin-left:0px;    
+}
+
+ul.tree li.last {
+    background: url(lastnode.png) no-repeat;
+} 
+
+#page-foot {
+    font-family: 'flour';
+    font-size:10px;
+    text-align: center;
+    width:600px;
+}
+
+
+#pagination {
+    display: block;
+    margin-bottom: 4em;
+    text-align: center;
+}
+
+#tag-cloud li {
+    margin: .2em 1em;
+    transition: transform 200ms linear;
+}
+
+#tag-cloud li a {
+    text-decoration: none;
+}
+
+#tag-cloud li:hover {
+    transform: rotate(0deg) scale(1.3, 1.3)!important;
+}
+
+#tag-cloud li:hover a {
+}
+
+.timed {
+    font-weight: bold;
+    margin-left: 10px;
+    color: #975648;
+}
+
+h1.small-title {;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: normal;
+}
+h1 a, h1 a:visited,
+h2 a, h2 a:visited,
+h3 a, h3 a:visited,
+h4 a, h4 a:visited,
+h5 a, h5 a:visited,
+h6 a, h6 a:visited {
+    text-decoration: none;
+}
+
+a.goto {
+    font-size: .8em;
+    padding: 0;
+    margin: 0em .2em;
+}
+
+
+img, figure, table {
+    margin: 1em auto;
+    overflow-x: auto;
+}
+
+table td, table th {
+}
+
+pre {
+    font-family:"proggy";
+    margin-left:20px;
+    width: 300px;                          /* specify width  */
+    white-space: pre-wrap;                 /* CSS3 browsers  */
+    white-space: -moz-pre-wrap !important; /* 1999+ Mozilla  */
+    white-space: -pre-wrap;                /* Opera 4 thru 6 */
+    white-space: -o-pre-wrap;              /* Opera 7 and up */
+    word-wrap: break-word;                 /* IE 5.5+ and up */
+}
+
+figure  {
+ border: none; margin: auto; 
+  }
+
+@media screen and (max-width: 650px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 14px;
+    }
+
+    #page-head h1 {
+        font-size: 2.5em;
+    }
+}

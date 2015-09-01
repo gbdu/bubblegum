@@ -1,0 +1,50 @@
+
+          <!-- begin includes/sidebar.html -->
+
+ <script type="text/javascript">
+    window.onload = function () {
+      var tree = document.getElementById("tree");
+      var lists = [ tree ];
+     
+      for (var i = 0; i < tree.getElementsByTagName("ul").length; i++)
+        lists[lists.length] = tree.getElementsByTagName("ul")[i];
+
+      for (var i = 0; i < lists.length; i++) {
+        var item = lists[i].lastChild;
+       
+        while (!item.tagName || item.tagName.toLowerCase() != "li")
+        item = item.previousSibling;
+
+        item.className += " last";
+      }
+    };
+   </script>
+<nav >
+<div class="coin" >{ ~ }</div>
+<ul class="tree" id="tree">
+{% for catd, null in categories %}
+<li {%- if catd == category %} class="active"{% endif -%}><a class="menuentry" href="{{ SITEURL }}/{{ catd.url }}">{{ catd }}</a></li>
+<ul class = "tree" id="tree">
+  {% for i in articles %}
+    {% if catd == i.category %}
+      <li class ="subcat"><a class="menuentry_s"  href = '{% print i.url %}'>{% print i.title %}</a> </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+    
+{% endfor %}
+
+
+</ul>
+</nav>
+<nav>
+<div class="coin" >{ @ }</div>
+<ul class="tree" id="tree">
+  <li ><a  class="menuentry" href='http://soundcloud.com/orvy'>soundcloud</a></li>
+  <li ><a  class="menuentry" href='ogrum@live.com'>email</a></li>
+  
+  <li class="last"><a  class="menuentry" href='http://github.com/gbdu'>github</a></li>
+
+</ul>
+</nav>
+<!-- end includes/sidebar.html -->
