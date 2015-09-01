@@ -1,7 +1,5 @@
 pre .hll { background-color: #3A2C2C }
-pre  { background: #191414; }
 pre .c { color: #D8A7A7 } /* Comment */
-pre .err { color: #F00000; background-color: #652020 } /* Error */
 pre .k { color: #56A33A; font-weight: bold } /* Keyword */
 pre .o { color: #8A8AAB } /* Operator */
 pre .cm { color: #C8C45A } /* Comment.Multiline */
@@ -44,16 +42,16 @@ pre .mf { color: #71509D; font-weight: bold } /* Literal.Number.Float */
 pre .mh { color: #B5CAD7; font-weight: bold } /* Literal.Number.Hex */
 pre .mi { color: #75759A; font-weight: bold } /* Literal.Number.Integer */
 pre .mo { color: #7562A4; font-weight: bold } /* Literal.Number.Oct */
-pre .sb { background-color: #3B1111 } /* Literal.String.Backtick */
+pre .sb {  } /* Literal.String.Backtick */
 pre .sc { color: #0040D0 } /* Literal.String.Char */
 pre .sd { color: #D04020 } /* Literal.String.Doc */
-pre .s2 { background-color: #3B1111 } /* Literal.String.Double */
+pre .s2 { } /* Literal.String.Double */
 pre .se { color: #A14B4B; font-weight: bold; background-color: #190000 } /* Literal.String.Escape */
-pre .sh { background-color: #3B1111 } /* Literal.String.Heredoc */
-pre .si { background-color: #3B1111 } /* Literal.String.Interpol */
+pre .sh {  } /* Literal.String.Heredoc */
+pre .si { } /* Literal.String.Interpol */
 pre .sx { color: #D02000; background-color: #fff0f0 } /* Literal.String.Other */
 pre .sr { color: #000000; background-color: #160C0C } /* Literal.String.Regex */
-pre .s1 { background-color: #313131 } /* Literal.String.Single */
+pre .s1 { } /* Literal.String.Single */
 pre .ss { color: #A06000 } /* Literal.String.Symbol */
 pre .bp { color: #007020 } /* Name.Builtin.Pseudo */
 pre .vc { color: #738CA5 } /* Name.Variable.Class */
