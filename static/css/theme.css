@@ -2,38 +2,29 @@
 
 @font-face {
      font-family: 'proggy';
-     src: url('proggy.otf');
+     src: url('fonts/proggy.otf');
      font-weight: normal;
      font-style: normal;
 }
 
+@font-face {
+    font-family: 'museo';
+    src: url('fonts/MuseoSans-300.eot');
+    src: url('fonts/MuseoSans-300.woff') format('woff'), url('fonts/MuseoSans-300.ttf') format('truetype'), url('fonts/MuseoSans-300.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @font-face {
      font-family: 'flour';
-     src: url('04B_08__.otf');
+     src: url('fonts/04B_08__.otf');
      font-weight: normal;
      font-style: normal;
 }
 
 @font-face {
      font-family: 'flourer';
-     src: url('04B_03__.otf');
-     font-weight: normal;
-     font-style: normal;
-}
-
-
-@font-face {
-     font-family: 'ubuntu';
-     src: url('ubuntu.otf');
-     font-weight: normal;
-     font-style: normal;
-}
-
-
-@font-face {
-     font-family: 'anon';
-     src: url('anon.otf');
+     src: url('fonts/04B_03__.otf');
      font-weight: normal;
      font-style: normal;
 }
@@ -44,7 +35,7 @@
 
 
 body {
-    font-family: 'anon', "Inconsolata", Monospace;
+    font-family: 'museo', "Inconsolata", Monospace;
     color: #EEDFB8;
     font-size:12pt;
     background-color: #190C12;
@@ -73,7 +64,7 @@ body {
     background-color: #1E0E16;
     padding-top:1px;
     padding-bottom:5px;
-    font-size:14pt;
+    font-size:12pt;
     border-left: 1px solid #AB745D;
     overflow:initial;
 }
@@ -113,15 +104,17 @@ a:active, a:focus {
 
 #maintitle  {
     font-size:2em;
-    line-height:1;
+    margin-top:2em;
     font-weight: bold;
     font-family: 'flour';
     margin-left:10px;
 }
 
 #subtitle{
-    font-size:8px;
+    font-family: 'museo';
+    font-size:12pt;
     margin-left:25px;
+    margin-top:-20px;
 }
 
 
@@ -193,7 +186,6 @@ article:last-of-type:after {
 
 .coin{
     font-size:15pt;
-
     font-weight: bold;
     font-family: "flour";
 }
