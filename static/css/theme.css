@@ -69,6 +69,12 @@ body {
     overflow:initial;
 }
 
+#searchy{
+	float: right;
+	width: 300px;
+}
+
+
 
 #ppcontent:hover{
     border-left: 1px solid #F5A685;
@@ -89,6 +95,21 @@ body {
 a, a:visited {
     color: #975648;
     text-decoration: none;
+}
+
+
+input{
+	background-color: #190C12;
+	box-shadow: none;
+	outline: 0;
+	margin: 0;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+	width: 170px;
+	color: #ffeba9; 
+	padding: 10px 10px 10px 20px;
+	border-radius: 0;
+    	border: 1px solid #AB745D;
 }
 
 p{

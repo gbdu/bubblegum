@@ -9,7 +9,7 @@
     <!--[if lte IE 8]><script type="text/javascript" src="{{ SITEURL }}/theme/js/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/skeleton.css" />
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/theme.css" />
-    
+
 
 
     <link rel="shortcut icon" href="{{ SITEURL }}/favicon.ico" />
@@ -30,15 +30,19 @@
     <div id="page">
       <div id="page-head">
           <a id="maintitle" href="{{ SITEURL }}/index.html">{{ SITENAME }}</a>
-        <div id='subtitle'>Random bits on random shit</div>
+        
 
+
+
+<div id="searchy" class="col-md-8">
 <form class="navbar-form navbar-left" role="search" action="{{ SITEURL }}/search.html" onsubmit="return validateForm(this.elements['q'].value);">
     <div class="form-group">
         <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input">
     </div>
 </form>
+</div>
 
-
+<div id='subtitle' class="col-md-4" >Random bits on random shit</div>
       </div>
       
       <div id="page-body">
