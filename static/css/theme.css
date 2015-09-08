@@ -62,8 +62,7 @@ body {
 
 #ppcontent{
     background-color: #1E0E16;
-    padding-top:1px;
-    padding-bottom:5px;
+	padding: 10px 10px 10px 10px;
     font-size:12pt;
     border-left: 1px solid #AB745D;
     overflow:initial;
@@ -96,6 +95,9 @@ a, a:visited {
     color: #975648;
     text-decoration: none;
 }
+
+
+
 
 
 input{
