@@ -33,6 +33,10 @@
     width:200px;
 }
 
+#tagsy{
+font-family: 'flour';
+font-size:8px;
+}
 
 body {
     font-family: 'museo', "Inconsolata", Monospace;

@@ -3,7 +3,7 @@
             {%- if article.tags %}
               <br />tags: 
               {%- for tag in article.tags %}
-              <a rel="tag" href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+              <a id="tagsy" rel="tag" href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
               {% endfor -%}
             {% endif -%}
             {%- if article.translations %}

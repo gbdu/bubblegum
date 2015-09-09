@@ -9,8 +9,8 @@
             <a id="pphead" rel="bookmark" href="{{ SITEURL }}/{{ article.url }}">[ {{ article.title }} ] -
             {% include "includes/article_meta.html" %}</a>
           <div id="ppcontent" class="post-content"> 
-            {{ article.summary }}
-          </div>
+		{% include "encrypt_content/summary.html" with context %}
+	</div>
       </div>
       
         <div class="readmore">

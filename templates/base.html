@@ -30,19 +30,18 @@
     <div id="page">
       <div id="page-head">
           <a id="maintitle" href="{{ SITEURL }}/index.html">{{ SITENAME }}</a>
-        
 
+		<div id="searchy">
+			<form class="navbar-form navbar-left" role="search" action="{{ SITEURL }}/search.html" onsubmit="return validateForm(this.elements['q'].value);">
+			    <div class="form-group">
+				<input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input">
+			    </div>
+			</form>
+		</div>
 
-
-<div id="searchy" class="col-md-8">
-<form class="navbar-form navbar-left" role="search" action="{{ SITEURL }}/search.html" onsubmit="return validateForm(this.elements['q'].value);">
-    <div class="form-group">
-        <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input">
-    </div>
-</form>
-</div>
-
-<div id='subtitle' class="col-md-4" >Random bits on random shit</div>
+		<div id='subtitle' class="col-md-4" >
+			Random bits on random shit
+		</div>
       </div>
       
       <div id="page-body">
@@ -73,6 +72,14 @@
       })();
     </script>
     {% endif %}
+
+	</div>
+
   
   </body>
+
+
+{% include "encrypt_content/scripts.html" with context %}
+
+
 </html>

@@ -12,14 +12,14 @@
 
 {%- block content %}
       <div class="post-header">
-          <a id="pphead" rel="bookmark"
-             href="{{ SITEURL }}/{{ article.url }}">
-             [ {{ article.title }} ]        -   {% include "includes/article_meta.html" %}
-          </a>
+          <a id="pphead" rel="bookmark" href="{{ SITEURL }}/{{ article.url }}">
+             [ {{ article.title }} ]   </a>   {% include "includes/article_meta.html" %}
       </div>
       <div id="ppcontent" class="post-content"> 
-        {{ article.content}}
-      </div>
+      
+	{% include "encrypt_content/content.html" with context %}
+
+	</div>
       
       {% if DISQUS_SITENAME %}
       <hr />
