@@ -1,4 +1,7 @@
-{%- if article.lang %}{% set DEFAULT_LANG = article.lang %}{% endif -%}
+{%- if article.lang %}
+{% set DEFAULT_LANG = article.lang %}
+{% endif -%}
+
 {% extends "base.html" %}
 
 {% block headers %}
@@ -8,18 +11,22 @@
     <link rel="stylesheet" media="not print" type="text/css" href="{{ SITEURL }}/theme/css/pygments.css" /> 
 {% endblock %}
 
-{% block title %}{{ article.title }} — {{ super() }}{% endblock %}
+    
+{% block title %}
+
+    {{ article.title }} — {{ super() }}
+{% endblock %}
 
 {%- block content %}
       <div class="post-header">
           <a id="pphead" rel="bookmark" href="{{ SITEURL }}/{{ article.url }}">
-             [ {{ article.title }} ]   </a>   {% include "includes/article_meta.html" %}
+            [ {{ article.title }} ] - {% include "includes/article_meta.html" %}
+	  </a>
       </div>
-      <div id="ppcontent" class="post-content"> 
-      
-	{% include "encrypt_content/content.html" with context %}
 
-	</div>
+      <div id="ppcontent" class="post-content"> 
+	{% include "encrypt_content/content.html" with context %}
+      </div>
       
       {% if DISQUS_SITENAME %}
       <hr />
